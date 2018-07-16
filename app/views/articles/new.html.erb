@@ -1,0 +1,31 @@
+<div class="jumbotron">
+  <div class="new-article">
+    <%= form_with scope: :article, url: articles_path, local: true do |form| %>
+      <h1>Take the pledge!</h1>
+      <p style="color:#fff;">Join many others and pledge to have 50/50 Vegetarian and Non-Vegetarian options</p>
+      <p>
+        <%= form.text_field :first, placeholder:"first" %>
+      </p>
+
+      <p>
+        <%= form.text_field :last, placeholder:"last" %>
+      </p>
+
+      <p>
+        <%= form.text_field :company, placeholder:"company" %>
+      </p>
+
+      <p>
+        <%= form.text_field :website, placeholder:"website" %>
+      </p>
+
+      <p>
+        <%= form.text_field :email, placeholder:"email" %>
+      </p>
+
+      <p>
+        <%= form.submit :Submit%>
+      </p>
+    <% end %>
+  </div>
+</div>
