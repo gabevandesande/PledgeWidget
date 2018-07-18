@@ -12,7 +12,7 @@ default: &default
 
 development:
   adapter: postgresql
-    host: localhost
+  host: localhost
   database: dbdevelopment
   pool: 5
   timeout: 5000
